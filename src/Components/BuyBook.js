@@ -20,70 +20,51 @@ export default function BuyBook() {
 
   return (
     <>
-      <div>
-        <Card.Header
-          style={{
-            textAlign: "center",
-            fontSize: "50px",
-            fontWeight: "bolder",
-          }}
-        >
-          <i className="fas fa-book-reader"></i> BUY_BOOK_NOW
-          <i className="fas fa-book-reader"></i>
-        </Card.Header>
-        <Card className="container py-4 mb-2 mt-5 text-center">
-          <Card.Header>Quote Of The Day</Card.Header>
-          <Card.Body>
-            <blockquote className="blockquote mb-0">
-              <p>
-                “Show me a family of readers, and I will show you the people who
-                move the world.”
-              </p>
-              <footer className="blockquote-footer">
-                <cite title="Source Title">Napoleon Bonaparte</cite>
-              </footer>
-            </blockquote>
-          </Card.Body>
-        </Card>
+      <div style={{ fontFamily: "Arial, Helvetica, sans-serif" }}>
         <Container>
-          <Row md={3} className="container" style={{ paddingLeft: "50px" }}>
+          <h1
+            style={{
+              textAlign: "center",
+              fontWeight: "bold",
+              marginTop: "20px",
+            }}
+          >
+            <img src="https://img.icons8.com/fluency/48/000000/book.png" />{" "}
+            BuyBookNow{" "}
+            <img src="https://img.icons8.com/fluency/48/000000/book.png" />
+          </h1>
+          <Row md={4} className="container" style={{ marginTop: "50px" }}>
             {result.map((book) => (
               <>
-                <Col className="py-3 mb-1 p-2" key={book.rank}>
+                <Col className=" p-4" key={book.rank}>
                   <Card
                     style={{
-                      width: "20rem",
+                      width: "15rem",
                       height: "100%",
-                      border: "2px solid black",
-                      borderRadius: "15px",
+                      border: "2px solid #D0D0D0",
+                      borderRadius: "10px",
                     }}
                     key={book.rank}
                   >
                     <Card.Img
                       variant="top"
                       height="250px"
-                      style={{ borderRadius: "13px" }}
                       src={book.book_image}
                     />
                     <Card.Body>
                       <Card.Title>{book.title}</Card.Title>
                       <Card.Text>Author: {book.author}</Card.Text>
-                      <Card.Text>Description: {book.description}</Card.Text>
+                      {/* <Card.Text>Description: {book.description}</Card.Text> */}
                     </Card.Body>
-                    <Row md={12} style={{ paddingLeft: "12px" }}>
-                      <Col className="py-6 mb-1">
+                    <Row md={12} className="container">
+                      <Col className="container py-6 mb-1">
                         <div
                           style={{
                             display: "flex",
                             justifyContent: "space-between",
-                            padding: "10px",
                           }}
                         >
-                          <p style={{ paddingTop: "12px" }}>
-                            <i className="fas fa-upload"> </i>
-                            {book.publisher}
-                          </p>
-                          <p style={{ paddingTop: "12px", color: "red" }}>
+                          <p style={{ color: "red", paddingTop: "10px" }}>
                             Buy Now <i className="fas fa-arrow-right"></i>
                           </p>
                           <Nav.Link
