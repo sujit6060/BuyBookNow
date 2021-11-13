@@ -33,56 +33,63 @@ export default function BuyBook() {
             BuyBookNow{" "}
             <img src="https://img.icons8.com/fluency/48/000000/book.png" />
           </h1>
-          <Row md={4} className="container" style={{ marginTop: "50px" }}>
+          <Row md={3} className="container" style={{ marginTop: "50px" }}>
             {result.map((book) => (
               <>
-                <Col className=" p-4" key={book.rank}>
-                  <Card
-                    style={{
-                      width: "15rem",
-                      height: "100%",
-                      border: "2px solid #D0D0D0",
-                      borderRadius: "10px",
-                    }}
+                <div style={{ paddingLeft: "3px" }}>
+                  <Col
+                    sm
+                    className="container mb-4 py-2 p-4 "
+                    style={{ height: "100%" }}
                     key={book.rank}
                   >
-                    <Card.Img
-                      variant="top"
-                      height="250px"
-                      src={book.book_image}
-                    />
-                    <Card.Body>
-                      <Card.Title>{book.title}</Card.Title>
-                      <Card.Text>Author: {book.author}</Card.Text>
-                      {/* <Card.Text>Description: {book.description}</Card.Text> */}
-                    </Card.Body>
-                    <Row md={12} className="container">
-                      <Col className="container py-6 mb-1">
-                        <div
-                          style={{
-                            display: "flex",
-                            justifyContent: "space-between",
-                          }}
-                        >
-                          <p style={{ color: "red", paddingTop: "10px" }}>
-                            Buy Now <i className="fas fa-arrow-right"></i>
-                          </p>
-                          <Nav.Link
-                            className="btn btn-outline-dark "
+                    <Card
+                      style={{
+                        width: "18rem",
+                        height: "100%",
+                        border: "2px solid #D0D0D0",
+                        borderRadius: "10px",
+                      }}
+                      key={book.rank}
+                    >
+                      <Card.Img
+                        variant="top"
+                        height="250px"
+                        src={book.book_image}
+                      />
+                      <Card.Body>
+                        <Card.Title>{book.title}</Card.Title>
+                        <Card.Text>Author: {book.author}</Card.Text>
+                        {/* <Card.Text>Description: {book.description}</Card.Text> */}
+                      </Card.Body>
+                      <Row md={12} className="container">
+                        <Col className="container mb-1">
+                          <div
                             style={{
-                              fontSize: "20px",
-                              color: "black",
-                              width: "50px",
+                              display: "flex",
+                              justifyContent: "space-between",
                             }}
-                            href={book.amazon_product_url}
                           >
-                            <i className="fab fa-amazon"></i>
-                          </Nav.Link>
-                        </div>
-                      </Col>
-                    </Row>
-                  </Card>
-                </Col>
+                            <p style={{ color: "red", paddingTop: "10px" }}>
+                              Buy Now <i className="fas fa-arrow-right"></i>
+                            </p>
+                            <Nav.Link
+                              className="btn btn-outline-dark "
+                              style={{
+                                fontSize: "20px",
+                                color: "black",
+                                width: "50px",
+                              }}
+                              href={book.amazon_product_url}
+                            >
+                              <i className="fab fa-amazon"></i>
+                            </Nav.Link>
+                          </div>
+                        </Col>
+                      </Row>
+                    </Card>
+                  </Col>
+                </div>
               </>
             ))}
           </Row>
