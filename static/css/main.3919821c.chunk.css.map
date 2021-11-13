@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,yBACE,OACE,SACF,CACF","file":"main.3919821c.chunk.css","sourcesContent":["@media (max-width: 550px) {\r\n  .media {\r\n    width: 46%;\r\n  }\r\n}\r\n"]}
