@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.112976d6.css","mappings":"AAAA,yBACE,OACE,SACF,CACF","sources":["App.css"],"sourcesContent":["@media (max-width: 550px) {\r\n  .media {\r\n    width: 46%;\r\n  }\r\n}\r\n"],"names":[],"sourceRoot":""}

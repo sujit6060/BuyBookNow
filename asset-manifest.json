@@ -1,22 +1,15 @@
 {
   "files": {
-    "main.css": "/BuyBookNow/static/css/main.3919821c.chunk.css",
-    "main.js": "/BuyBookNow/static/js/main.61ee5675.chunk.js",
-    "main.js.map": "/BuyBookNow/static/js/main.61ee5675.chunk.js.map",
-    "runtime-main.js": "/BuyBookNow/static/js/runtime-main.0539b15d.js",
-    "runtime-main.js.map": "/BuyBookNow/static/js/runtime-main.0539b15d.js.map",
-    "static/js/2.c76f6ffe.chunk.js": "/BuyBookNow/static/js/2.c76f6ffe.chunk.js",
-    "static/js/2.c76f6ffe.chunk.js.map": "/BuyBookNow/static/js/2.c76f6ffe.chunk.js.map",
-    "static/js/3.a28c82d8.chunk.js": "/BuyBookNow/static/js/3.a28c82d8.chunk.js",
-    "static/js/3.a28c82d8.chunk.js.map": "/BuyBookNow/static/js/3.a28c82d8.chunk.js.map",
+    "main.css": "/BuyBookNow/static/css/main.112976d6.css",
+    "main.js": "/BuyBookNow/static/js/main.e8153501.js",
+    "static/js/453.6e7055f3.chunk.js": "/BuyBookNow/static/js/453.6e7055f3.chunk.js",
     "index.html": "/BuyBookNow/index.html",
-    "static/css/main.3919821c.chunk.css.map": "/BuyBookNow/static/css/main.3919821c.chunk.css.map",
-    "static/js/2.c76f6ffe.chunk.js.LICENSE.txt": "/BuyBookNow/static/js/2.c76f6ffe.chunk.js.LICENSE.txt"
+    "main.112976d6.css.map": "/BuyBookNow/static/css/main.112976d6.css.map",
+    "main.e8153501.js.map": "/BuyBookNow/static/js/main.e8153501.js.map",
+    "453.6e7055f3.chunk.js.map": "/BuyBookNow/static/js/453.6e7055f3.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.0539b15d.js",
-    "static/js/2.c76f6ffe.chunk.js",
-    "static/css/main.3919821c.chunk.css",
-    "static/js/main.61ee5675.chunk.js"
+    "static/css/main.112976d6.css",
+    "static/js/main.e8153501.js"
   ]
 }
